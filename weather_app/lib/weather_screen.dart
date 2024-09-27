@@ -29,11 +29,12 @@ class WeatherScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               width: double.infinity,
               child: Card(
-                color: Colors.blueAccent,
+                color: Colors.lightBlue,
                 elevation: 10,
                 shadowColor: Colors.blueGrey,
                 shape: RoundedRectangleBorder(
@@ -80,14 +81,231 @@ class WeatherScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: const Text(
-                'Weather Forecast',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                ),
+            const Text(
+              'Weather Forecast',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+              ),
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  SizedBox(
+                    child: Card(
+                      elevation: 10,
+                      child: Container(
+                        width: 100,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.lightBlue,
+                        ),
+                        child: const Column(
+                          children: [
+                            Text(
+                              "03:00",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Icon(
+                              Icons.cloud,
+                              size: 32,
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "301.17",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    child: Card(
+                      elevation: 10,
+                      child: Container(
+                        width: 100,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.lightBlue,
+                        ),
+                        child: const Column(
+                          children: [
+                            Text(
+                              "03:00",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Icon(
+                              Icons.cloud,
+                              size: 32,
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "301.17",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    child: Card(
+                      elevation: 10,
+                      child: Container(
+                        width: 100,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.lightBlue,
+                        ),
+                        child: const Column(
+                          children: [
+                            Text(
+                              "03:00",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Icon(
+                              Icons.cloud,
+                              size: 32,
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "301.17",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    child: Card(
+                      elevation: 10,
+                      child: Container(
+                        width: 100,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.lightBlue,
+                        ),
+                        child: const Column(
+                          children: [
+                            Text(
+                              "03:00",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Icon(
+                              Icons.cloud,
+                              size: 32,
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "301.17",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    child: Card(
+                      elevation: 10,
+                      child: Container(
+                        width: 100,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.lightBlue,
+                        ),
+                        child: const Column(
+                          children: [
+                            Text(
+                              "03:00",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Icon(
+                              Icons.cloud,
+                              size: 32,
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "301.17",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    child: Card(
+                      elevation: 10,
+                      child: Container(
+                        width: 100,
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.lightBlue,
+                        ),
+                        child: const Column(
+                          children: [
+                            Text(
+                              "03:00",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Icon(
+                              Icons.cloud,
+                              size: 32,
+                            ),
+                            const SizedBox(
+                              height: 8,
+                            ),
+                            Text(
+                              "301.17",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               ),
             )
           ],
